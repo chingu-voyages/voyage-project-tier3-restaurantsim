@@ -1,4 +1,4 @@
-# voyage-project-tier2-restaurant-simulator
+# voyage-project-tier3-restaurant-simulator
 
 ## Table of Contents
 
@@ -51,7 +51,8 @@ implement to enhance this app, if time permits.
 
 #### Structure
 
-- [ ] This is a purely frontend application. No backend is required.
+- [ ] This is a full-stack application. Frontend and backend are required.
+- [ ] Integrate user authentication (sign up and sign in) with database system.
 - [ ] You may use any languages, tools, or libraries you prefer when designing and building this app.
 - [ ] You may **_NOT_** use AI-base solution generators like GitHub CoPilot.
 - [ ] Useful links and resources:
@@ -68,6 +69,11 @@ implement to enhance this app, if time permits.
 
 -   Overview:
     - [ ] Develop a single-page application (SPA) that simulates a restaurant menu and ordering system.
+
+-   User Authentication:
+    - [ ] The application should provide secure user authentication features, enabling users to register, log in and log out.
+    - [ ] Login and logout operations should be handled via the database to maintain data integrity and security.
+    - [ ] Users should have a profile where they can store credit and view their order history.
 
 -   Menu Fetching and Display
     - [ ] Fetch menu data from the Menus API to retrieve restaurant data.
@@ -105,8 +111,18 @@ implement to enhance this app, if time permits.
   - [ ] Dynamically add more categories to the menu.
   - [ ] Implement search functionality by food names, prices and country.
 
+- Payment Processing
+
+  - [ ] Integrate Stripe for secure and reliable payment processing.
+
 
 ## Acceptance Criteria
+
+- User Authentication
+
+  - [ ] The application must provide secure user authentication features, enabling users to register, log in, and log out. 
+  - [ ] User credentials should be securely handled, with passwords hashed before storage. 
+  - [ ] Each user should have a profile page where they can view and update their account information, including stored credit and order history.
 
 - Menu Fetching and Display
 
