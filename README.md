@@ -1,4 +1,4 @@
-# voyage-project-tier2-restaurant-simulator
+# voyage-project-tier3-restaurant-simulator
 
 ## Table of Contents
 
@@ -51,11 +51,13 @@ implement to enhance this app, if time permits.
 
 #### Structure
 
-- [ ] This is a purely frontend application. No backend is required.
+- [ ] This is a full-stack application. Frontend and backend are required.
+- [ ] Integrate user authentication (sign up and sign in) with database system.
 - [ ] You may use any languages, tools, or libraries you prefer when designing and building this app.
 - [ ] You may **_NOT_** use AI-base solution generators like GitHub CoPilot.
 - [ ] Useful links and resources:
   - [Menus API](https://menus-api.vercel.app/)
+  - [Stripe](https://docs.stripe.com/payments/checkout)
 
 #### Styling
 
@@ -67,9 +69,17 @@ implement to enhance this app, if time permits.
 #### Functionality
 
 -   Overview:
-    - [ ] Develop a single-page application (SPA) that simulates a restaurant menu and ordering system.
+
+    - [ ] Develop a Frontend and Backend application that simulates a restaurant menu and ordering system.
+
+-   User Authentication:
+
+    - [ ] The application should provide secure user authentication features, enabling users to register, log in and log out.
+    - [ ] Login and logout operations should be handled via the database to maintain data integrity and security.
+    - [ ] Users should have a profile where they can add and store credit.
 
 -   Menu Fetching and Display
+
     - [ ] Fetch menu data from the Menus API to retrieve restaurant data.
     - [ ] Ensure the menu includes images, food names, prices, restaurant names and country for each item.
     - [ ] Implement filter functionality to display menu items by category.
@@ -82,7 +92,6 @@ implement to enhance this app, if time permits.
     - [ ] Display the current order summary, including item names, prices, and total cost.
     - [ ] Provide an option to add tips to the order total.
     - [ ] Ensure users can remove items from the order before finalizing it.
-    - [ ] Teams should utilize browser's local storage to store order data.
 
 -   Payment Processing
 
@@ -100,13 +109,26 @@ implement to enhance this app, if time permits.
 
 ### Extras (Not Required)
 
+- User Authentication
+  - [ ] Users can view their order history on profile page, including past and current orders.
+
 - Menu Customization
 
   - [ ] Dynamically add more categories to the menu.
   - [ ] Implement search functionality by food names, prices and country.
 
+- Payment Processing
+
+  - [ ] Integrate Stripe for secure and reliable payment processing.
+
 
 ## Acceptance Criteria
+
+- User Authentication
+
+  - [ ] The application must provide secure user authentication features, enabling users to register, log in, and log out. 
+  - [ ] User credentials should be securely handled, with passwords hashed before storage. 
+  - [ ] Users should have a profile page to view and manage their account information, including adding credit and checking their account balance.
 
 - Menu Fetching and Display
 
@@ -142,7 +164,6 @@ implement to enhance this app, if time permits.
       - view a summary of their current order,
       - add tips to their order total,
       - remove items from their order before finalizing it.
-  - [ ] App uses browser local storage for storing user credit and order data.
 
 - Payment Processing
 
